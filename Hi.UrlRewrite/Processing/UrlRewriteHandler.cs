@@ -20,8 +20,9 @@ namespace Hi.UrlRewrite.Processing
         {
             try
             {
-                var urlRewriteProcessor = new InboundRewriteProcessor();
-                var requestArgs = new HttpRequestArgs(context, HttpRequestType.Begin);
+              HttpContextBase abstractContext = new System.Web.HttpContextWrapper(context);
+              var urlRewriteProcessor = new InboundRewriteProcessor();
+                HttpRequestArgs requestArgs = new HttpRequestArgs(abstractContext, HttpRequestType.Begin);
                 var requestUri = context.Request.Url;
 
                 var siteContext = SiteContextFactory.GetSiteContext(requestUri.Host, requestUri.AbsolutePath,
