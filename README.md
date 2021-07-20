@@ -12,7 +12,7 @@ Sitecore Support: "Creation of custom segments is not supported by the Experienc
 Changelog
 =========
 
-Version 1.10 - https://github.com/chris-hmmr/UrlRewrite/releases/tag/v10.1.1
+Version 1.10.1 - https://github.com/chris-hmmr/UrlRewrite/releases/tag/v10.1.1
 * Added support for Sitecore 10.1, you can also find this module as Docker image here: chuemmer/url-rewrite:sc10.1.1-1809
 
 Version 1.9
